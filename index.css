@@ -6,24 +6,18 @@
 .showing{
     display: block;
 }
-body {
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 
-    height: 240px;
-    width: 300px;
-    margin: auto;
-
-}
-.clock ,
-.nameform,
-.geeting,
-.todoForm,
-.todoList {
+div {
+    background-color: rgb(255,255,255, 0.6);
+    overflow:auto;
+    width: 30%;
+    margin: 7% auto;
     text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 ul {
@@ -38,6 +32,26 @@ button {
     background-color: transparent;
 
 }
+
 button:hover{
     background-color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn .5s linear;
 }
