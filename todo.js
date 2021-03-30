@@ -9,9 +9,11 @@ function delTodo(event) {
     const btn = event.target;
     const delli = btn.parentNode;
     todoList.removeChild(delli);
-    const cleanTodos = todos.filter(function(todo){
-        return todo.id !== parseInt(delli.id);
-    });
+    const cleanTodos = todos.filter(
+        function(todo){
+            return todo.id !== parseInt(delli.id);
+        }
+    );
     todos = cleanTodos;
     saveTodos();
 }
@@ -50,9 +52,11 @@ function loadTOdo() {
     const loadedTodos = localStorage.getItem("todos");
     if (loadedTodos !== null) {
         const parsedTodos = JSON.parse(loadedTodos);
-        parsedTodos.forEach(function(todo) {
-            paintTodo(todo.text);
-        });
+        parsedTodos.forEach(
+            function(todo) {
+                paintTodo(todo.text);
+            }
+        );
     }
 } 
 

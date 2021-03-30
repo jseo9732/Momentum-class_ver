@@ -6,3 +6,38 @@
 .showing{
     display: block;
 }
+body {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 240px;
+    width: 300px;
+    margin: auto;
+
+}
+.clock ,
+.nameform,
+.geeting,
+.todoForm,
+.todoList {
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    color: red;
+    background-color: transparent;
+
+}
+button:hover{
+    background-color: white;
+}
